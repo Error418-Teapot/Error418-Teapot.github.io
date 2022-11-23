@@ -1,0 +1,42 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+h1 {
+  animation-name: grow-shrink, expand;
+  animation-duration: 8s, 5s, 5s;
+  animation-iteration-count: infinite;
+
+  font-family: Avenir;
+  font-size: 30px;
+  text-align: center;
+}
+
+@keyframes change-color {
+  25% { color: #00A4BD; }
+  50% { color: #FF7A59; }
+  75% { color: #00BDA5; }
+}
+
+@keyframes grow-shrink {
+  50% { transform: scale(1.5); }
+}
+
+@keyframes expand {
+  50% { word-spacing: 20px; }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
