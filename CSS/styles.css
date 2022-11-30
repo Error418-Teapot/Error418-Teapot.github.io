@@ -1,3 +1,11 @@
+#pseudobody1{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #4D4646;
+}
 h1 {
 	text-align: center;
 	color: cadetblue;
